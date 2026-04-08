@@ -1,0 +1,177 @@
+.order-progress-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(to right, #eff6ff, #f5f3ff);
+    border-radius: 0.75rem;
+    border: 1px solid #dbeafe;
+}
+
+.order-progress-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.progress-container {
+    margin-bottom: 2rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.progress-label,
+.progress-percentage {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1d4ed8;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 0.625rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: #2563eb;
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.3s ease-in-out;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.step-active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.step-inactive {
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+.step-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.order-details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .order-details-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.order-detail-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+}
+
+.order-detail-title {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.order-detail-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.order-detail-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #f3f4f6;
+}
+
+.order-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-detail-icon {
+    font-size: 1.5rem;
+}
+
+.order-detail-text {
+    flex: 1;
+}
+
+.order-detail-name {
+    font-weight: 600;
+    color: #111827;
+}
+
+.order-detail-price {
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.order-detail-description {
+    color: #6b7280;
+}
+
+.order-total-container {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-total-label {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.order-total-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #059669;
+}
+
+.progress-fill[data-progress] {
+    width: var(--progress-width, 0%);
+}

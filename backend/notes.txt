@@ -1,0 +1,7 @@
+Endpoint nécessaire:
+    GET /payments
+    GET /orders/active
+    GET /analytics/orders-summary
+    GET /analytics/user-stats/:userId
+    POST /simulate/brew/:orderId
+    POST /simulate/deliver/:orderId
